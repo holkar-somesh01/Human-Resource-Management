@@ -26,7 +26,7 @@ app.use("/api/teamlead", require("./routes/teamLead.routes"))
 
 app.use((req, res) => {
     res.sendFile(path.join(__dirname, "dist", "index.html"))
-    res.status(404).json({ message: "RESOURCE NOT FOUND" })
+    // res.status(404).json({ message: "RESOURCE NOT FOUND" })
 })
 app.use((err, req, res, next) => {
     console.log(err)
